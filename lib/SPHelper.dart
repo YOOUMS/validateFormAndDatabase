@@ -37,4 +37,8 @@ class SpHelper {
   static setUser(String? data) {
     sp!.setString('UserData', data!);
   }
+
+  static deleteData() {
+    sp!.clear();
+  }
 }
